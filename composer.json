@@ -1,0 +1,16 @@
+{
+  "name": "hexlet/code",
+  "description": "First backend php project",
+  "type": "project",
+  "license": "MIT",
+  "bin": [
+    "bin/brain-games"
+  ],
+  "authors": [
+    {
+      "name": "spook-work",
+      "email": "hersgori4@protonmail.com"
+    }
+  ],
+  "require": {}
+}
