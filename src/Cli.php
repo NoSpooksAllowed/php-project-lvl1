@@ -10,8 +10,7 @@ use function cli\prompt;
  *
  * @return void
  */
-function greeting(): void
-{
+function greeting(): void {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
