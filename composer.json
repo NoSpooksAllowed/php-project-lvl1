@@ -8,8 +8,11 @@
   ],
   "autoload": {
     "psr-4": {
-      "BrainGames\\": "src/"
-    }
+      "BrainGames\\": "src"
+    },
+    "files": [
+      "src/Cli.php"
+    ]
   },
   "authors": [
     {
