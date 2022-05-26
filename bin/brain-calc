@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+
+$autoloadPath1 = __DIR__ . '/../../../autoload.php';
+$autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
+
+use function BrainGames\GameLoop\runGame;
+use function BrainGames\Games\CalcGame\isEqualCalc;
+
+if (file_exists($autoloadPath1)) {
+    require_once $autoloadPath1;
+} else if (file_exists($autoloadPath2)) {
+    require_once $autoloadPath2;
+}
+
+runGame(\BrainGames\Games\CalcGame\GAME_DESCRIPTION, fn() => isEqualCalc());
