@@ -21,7 +21,7 @@ function findGcd(int $a, int $b): int
 }
 
 /**
- * Run main CcdGame mechanics
+ * Run main GcdGame mechanics
  * @return array contains answer, your answer, boolean result
  * between those answers
  */
