@@ -47,4 +47,4 @@ function isEqualCalc(): array
     return [$answer, $yourAnswer, $answer === $yourAnswer];
 }
 
-const GAME_DESCRIPTION = 'What is the result of the expression?';
+const GAME_DESCRIPTION = "What is the result of the expression?";

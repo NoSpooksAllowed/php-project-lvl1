@@ -5,7 +5,7 @@ $autoloadPath1 = __DIR__ . '/../../../autoload.php';
 $autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
 
 use function BrainGames\GameLoop\runGame;
-use function BrainGames\Games\GcdGame\isGcd;
+use function BrainGames\Games\ProgressionGame\isRightNumInProgression;
 
 if (file_exists($autoloadPath1)) {
     require_once $autoloadPath1;
@@ -13,4 +13,4 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-runGame(\BrainGames\Games\GcdGame\GAME_DESCRIPTION, fn() => isGcd());
+runGame(\BrainGames\Games\ProgressionGame\GAME_DESCRIPTION, fn() => isRightNumInProgression());
