@@ -4,14 +4,17 @@
   "type": "project",
   "license": "MIT",
   "bin": [
-    "bin/brain-games"
+    "bin/brain-games",
+    "bin/brain-even"
   ],
   "autoload": {
     "psr-4": {
       "BrainGames\\": "src"
     },
     "files": [
-      "src/Cli.php"
+      "src/Cli.php",
+      "src/GameLoop.php",
+      "src/Games/EvenGame.php"
     ]
   },
   "authors": [
