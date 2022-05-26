@@ -18,9 +18,9 @@ function runGame(string $gameDescription, callable $gameMechanics): void
     $name = greeting();
     line("{$gameDescription}");
 
-    $res = null;
+    $tries = null;
 
-    for ($i = 0; $i < $numberOfTry; $i++) {
+    for ($i = 1; $i <= $numberOfTry; $i++) {
         [$answer, $yourAnswer, $res] = $gameMechanics();
 
         if (!$res) {
@@ -30,10 +30,10 @@ function runGame(string $gameDescription, callable $gameMechanics): void
         }
 
         line("Correct!");
-        $res = $i;
+        $tries = $i;
     }
 
-    if ($res === $numberOfTry) {
+    if ($tries === $numberOfTry) {
         line("Congratulations, {$name}!");
     }
 }
