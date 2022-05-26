@@ -5,6 +5,11 @@ namespace BrainGames\Games\EvenGame;
 use function cli\line;
 use function cli\prompt;
 
+/**
+ * Run main EvenGame mechanics
+ * @return array contains answer, your answer, boolean result
+ * between those answers
+ */
 function isEven(): array
 {
     $num = rand(1, 100);
